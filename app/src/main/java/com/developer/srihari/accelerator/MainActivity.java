@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     SensorManager sensorManager;
     Sensor acceleration;
     TextView net,acclr,name;
-    int [] imgs={R.drawable.nanbenda,R.drawable.download};
+    int [] imgs={R.drawable./*Image You want to change*/,R.drawable.download};
 
     float net_acclrn=0.00f;
     int index=0;
@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             index=(index+1)%(imgs.length);
             imgview.setImageDrawable(getResources().getDrawable(imgs[index]));
             if (index!=0) {
-                name.setText("Korangu Payalyee");
+                name.setText("Text 1");
             } else {
-                name.setText("Nanbenda..");
+                name.setText("Text 2");
             }
         }
     }
